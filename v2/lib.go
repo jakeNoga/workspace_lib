@@ -21,12 +21,12 @@ package workspace_lib
 // Rewrite Add to take in two parameters of type Number and return a value of type Number. Version your module again.
 // Because this is a backward-breaking change, this should be v2.0.0 of your module.
 
-// Number
+// A Number this allows the user to call the [Add].
 type Number interface {
 	~int | ~float32 | ~float64
 }
 
-// Add takes two numbers and adds the to together. To explain how addition works please take a look at [Addition].
+// Add takes two [Number] and adds the to together. To explain how addition works please take a look at [Addition].
 //
 // [Addition]: https://www.mathsisfun.com/numbers/addition.html
 func Add[N Number](var1, var2 N) N {
